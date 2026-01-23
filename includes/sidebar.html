@@ -1,0 +1,29 @@
+<aside class="sidebar">
+  <div class="profile">
+    <img src="{{ '/assets/images/avatar.png' | relative_url }}" alt="avatar" class="avatar">
+    <div class="profile-meta">
+      <h2 class="name">{{ site.author.name }}</h2>
+      <p class="role">{{ site.author.role }}</p>
+    </div>
+  </div>
+
+  <nav class="nav">
+    <ul>
+      <li><a href="{{ '/' | relative_url }}">Home</a></li>
+      <li><a href="{{ '/publications/' | relative_url }}">Publications</a></li>
+      <li><a href="{{ '/presentations/' | relative_url }}">Presentations</a></li>
+      <li><a href="{{ '/projects/' | relative_url }}">Projects</a></li>
+      <li><a href="{{ '/cv/' | relative_url }}">CV</a></li>
+    </ul>
+  </nav>
+
+  <section class="contact">
+    <h3>Contact</h3>
+    <ul>
+      {% if site.author.email %}<li><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>{% endif %}
+      {% if site.author.website %}<li><a href="{{ site.author.website }}">{{ site.author.website }}</a></li>{% endif %}
+    </ul>
+  </section>
+
+  <p class="bio">{{ site.author.bio }}</p>
+</aside>

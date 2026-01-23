@@ -1,0 +1,17 @@
+title: "Your Name"
+description: "Personal website"
+baseurl: "" # change if serving from subpath
+url: "https://durandcharlotte.durandcharlotte.github.io" # update to your site URL
+
+author:
+  name: "Your Name"
+  role: "Researcher • Developer"
+  email: "you@example.com"
+  website: ""
+  bio: "Short bio or tagline."
+
+markdown: kramdown
+theme: null
+plugins: []
+
+permalink: /:title/
