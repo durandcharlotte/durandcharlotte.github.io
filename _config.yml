@@ -1,14 +1,14 @@
-title: "Your Name"
+title: "Charlotte Durand"
 description: "Personal website"
 baseurl: "" # change if serving from subpath
 url: "https://durandcharlotte.durandcharlotte.github.io" # update to your site URL
 
 author:
-  name: "Your Name"
-  role: "Researcher • Developer"
-  email: "you@example.com"
-  website: ""
-  bio: "Short bio or tagline."
+  name: "Charlotte Durand"
+  role: "PostDoc @IGE"
+  email: "ch<!-- abc@def -->arlotte.dur<!-- abc@def -->and1@univ<span style="display:none">DELETEME</span>-grenoble-alpes.fr"
+  website: "https://durandcharlotte.durandcharlotte.github.io"
+  bio: ""
 
 markdown: kramdown
 theme: null
