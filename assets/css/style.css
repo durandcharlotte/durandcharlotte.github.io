@@ -23,51 +23,7 @@ body{
   -moz-osx-font-smoothing:grayscale;
   line-height:1.45;
 }
-.hero {
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  min-height: 48vh;
-  padding: 3rem 1.25rem;
-  color: #fff;
-}
 
-.hero__video {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-}
-
-.hero__bg {
-  position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-position: center;
-  z-index: 0;
-}
-
-.hero__overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.48);
-  z-index: 1;
-}
-
-.hero__content {
-  position: relative;
-  z-index: 2;
-  max-width: 80ch;
-}
-
-/* Hide video on small screens or when user prefers reduced motion */
-@media (max-width: 720px), (prefers-reduced-motion: reduce) {
-  .hero__video { display: none; }
-  .hero__bg { z-index: 0; }
-}
 /* Hero */
 .hero{
   position:relative;
@@ -127,6 +83,16 @@ body{
   color: rgba(255,255,255,0.9);
   font-size: clamp(.95rem, 1.6vw, 1.1rem);
 }
+.hero__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+
 
 /* reveal override for hero */
 .hero .reveal{opacity:0; transform:translateY(8px); transition:opacity .6s ease, transform .6s ease}
