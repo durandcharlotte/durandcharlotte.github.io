@@ -10,7 +10,6 @@
     preload="metadata"
     aria-hidden="true"
   >
-    <source src="{{ '/assets/videos/lala.webm' | relative_url }}" type="video/webm">
     <source src="{{ '/assets/videos/lala.mp4'  | relative_url }}" type="video/mp4">
     <!-- If the browser can't play video, the poster image will be used -->
   </video>
