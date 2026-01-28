@@ -1,7 +1,29 @@
-- authors: "Durand, C. and Collaborator, A."
-  title: "Title of a paper"
-  venue: "Journal / Conference"
-  year: 2025
-  url: "https://example.com/paper.pdf"
+- authors: "**Durand, C.**, Finn, T. S., Farchi, A., Bocquet, M., Boutin, G., & Olason, E."
+  title: "Data-driven surrogate modeling of high-resolution sea-ice thickness in the Arctic."
+  venue: "The Cryosphere"
+  year: 2024
+  url: "https://doi.org/10.5194/tc-18-1791-2024.pdf"
 
-# Add entries as needed
+- authors: "**Durand, C.**, Finn, T. S., Farchi, A., Bocquet, M., Brajard, J., & Bertino, L."
+  title: "Four-dimensional variational data assimilation with a sea-ice thickness emulator."
+  venue: "The Cryosphere"
+  year: 2025
+  url: "https://doi.org/10.5194/tc-19-5613-2025.pdf"
+
+- authors: "Finn, T. S., Bocquet, M., Rampal, P., **Durand, C.**, Porro, F., Farchi, A., & Carrassi, A."
+  title: "Generative AI models capture realistic sea-ice evolution from days to decades"
+  venue: "Preprint"
+  year: 2025
+  url: "https://doi.org/10.48550/arXiv.2508.14984.pdf"
+
+- authors: "Finn, T. S., Durand, C., Farchi, A., Bocquet, M., Chen, Y., Carrassi, A., & Dansereau, V. "
+  title: "Deep learning subgrid-scale parametrisations for short-term forecasting of sea-ice dynamics with a Maxwell elasto-brittle rheology."
+  venue: "The Cryosphere"
+  year: 2023
+  url: "https://doi.org/10.5194/tc-17-2965-2023.pdf"
+
+- authors: "Finn, T. S., Durand, C., Farchi, A., Bocquet, M., Rampal, P., & Carrassi, A."
+  title: "Generative Diffusion for Regional Surrogate Models From Sea‐Ice Simulations"
+  venue: "Journal of Advances in Modeling Earth Systems"
+  year: 2024
+  url: "https://doi.org/10.1029/2024MS004395"
