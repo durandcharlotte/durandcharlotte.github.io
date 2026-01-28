@@ -15,7 +15,7 @@
   </video>
 
   <!-- Fallback background image (used when video is hidden or unavailable) -->
-  <div class="hero__bg" style="background-image: url('{{ '/assets/images/sea_ice.jpg' | relative_url }}')"></div>
+  <!--<div class="hero__bg" style="background-image: url('{{ '/assets/images/sea_ice.jpg' | relative_url }}')"></div>
 
   <div class="hero__overlay" aria-hidden="true"></div>
 
