@@ -3,8 +3,8 @@
   <div class="hero__overlay"></div>
 
   <div class="hero__content reveal">
-    <h2 class="hero__title">Sea-ice data-driven emulution</h2>
-    <p class="hero__subtitle">Accelerating sea ice modeling with neural networks!.</p>
+    <h2 class="hero__title">Sea-ice data-driven emulation</h2>
+    <p class="hero__subtitle">Accelerating sea ice modeling with neural networks!</p>
   </div>
 </div>
 
