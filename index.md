@@ -2,7 +2,7 @@
   <!-- Video: autoplay, muted, loop, playsinline so browsers allow autoplay -->
   <video
     class="hero__video"
-    poster="{{ '/assets/images/sea_ice.jpg' | relative_url }}"
+    poster="{{ '/assets/videos/lala.mp4' | relative_url }}"
     autoplay
     muted
     loop
