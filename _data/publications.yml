@@ -1,29 +1,34 @@
-- authors: "**Durand, C.**, Finn, T. S., Farchi, A., Bocquet, M., Boutin, G., & Olason, E."
+- authors: "Durand, C., Finn, T. S., Farchi, A., Bocquet, M., Boutin, G., & Olason, E."
   title: "Data-driven surrogate modeling of high-resolution sea-ice thickness in the Arctic."
   venue: "The Cryosphere"
   year: 2024
-  url: "https://doi.org/10.5194/tc-18-1791-2024.pdf"
+  url: "https://doi.org/10.5194/tc-18-1791-2024"
+  abstract: "This paper focuses on predicting Arctic-wide sea-ice thickness using surrogate modeling with deep learning. The model has a predictive power of 12 h up to 6 months. For this forecast horizon, persistence and daily climatology are systematically outperformed, a result of learned thermodynamics and advection. Consequently, surrogate modeling with deep learning proves to be effective at capturing the complex behavior of sea ice.."
 
-- authors: "**Durand, C.**, Finn, T. S., Farchi, A., Bocquet, M., Brajard, J., & Bertino, L."
+- authors: "Durand, C., Finn, T. S., Farchi, A., Bocquet, M., Brajard, J., & Bertino, L."
   title: "Four-dimensional variational data assimilation with a sea-ice thickness emulator."
   venue: "The Cryosphere"
   year: 2025
-  url: "https://doi.org/10.5194/tc-19-5613-2025.pdf"
+  url: "https://doi.org/10.5194/tc-19-5613-2025"
+  abstract: "This paper presents a four-dimensional variational data assimilation system based on a neural network emulator for sea-ice thickness, learned from neXtSIM (neXt generation Sea Ice Model) simulation outputs. Testing with simulated and real observation retrievals, the system improves forecasts and bias error, performing comparably to operational methods, demonstrating the promise of sea-ice data-driven data assimilation systems."
 
-- authors: "Finn, T. S., Bocquet, M., Rampal, P., **Durand, C.**, Porro, F., Farchi, A., & Carrassi, A."
+- authors: "Finn, T. S., Bocquet, M., Rampal, P., Durand, C., Porro, F., Farchi, A., & Carrassi, A."
   title: "Generative AI models capture realistic sea-ice evolution from days to decades"
   venue: "Preprint"
   year: 2025
-  url: "https://doi.org/10.48550/arXiv.2508.14984.pdf"
+  url: "https://doi.org/10.48550/arXiv.2508.14984"
+  abstract:"Sea ice plays an important role in stabilising the Earth system. Yet, representing its dynamics remains a major challenge for models, as the underlying processes are scale-invariant and highly anisotropic. This poses a dilemma: physics-based models that faithfully reproduce the observed dynamics are computationally costly, while efficient AI models sacrifice realism. Here, to resolve this dilemma, we introduce GenSIM, the first generative AI model to predict the evolution of the full Arctic sea-ice state at 12-hour increments. Trained for sub-daily forecasting on 20 years of sea-ice-ocean simulation data, GenSIM makes realistic predictions for 30 years, while reproducing the dynamical properties of sea ice with its leads and ridges and capturing long-term trends in the sea-ice volume. Notably, although solely driven by atmospheric reanalysis, GenSIM implicitly learns hidden signatures of multi-year ice-ocean interaction. Therefore, generative AI can extrapolate from sub-daily forecasts to decadal simulations, while retaining physical consistency."
 
 - authors: "Finn, T. S., Durand, C., Farchi, A., Bocquet, M., Chen, Y., Carrassi, A., & Dansereau, V. "
   title: "Deep learning subgrid-scale parametrisations for short-term forecasting of sea-ice dynamics with a Maxwell elasto-brittle rheology."
   venue: "The Cryosphere"
   year: 2023
-  url: "https://doi.org/10.5194/tc-17-2965-2023.pdf"
+  url: "https://doi.org/10.5194/tc-17-2965-2023"
+  abstract:"We combine deep learning with a regional sea-ice model to correct model errors in the sea-ice dynamics of low-resolution forecasts towards high-resolution simulations. The combined model improves the forecast by up to 75 % and thereby surpasses the performance of persistence. As the error connection can additionally be used to analyse the shortcomings of the forecasts, this study highlights the potential of combined modelling for short-term sea-ice forecasting."
 
 - authors: "Finn, T. S., Durand, C., Farchi, A., Bocquet, M., Rampal, P., & Carrassi, A."
   title: "Generative Diffusion for Regional Surrogate Models From Sea‐Ice Simulations"
   venue: "Journal of Advances in Modeling Earth Systems"
   year: 2024
   url: "https://doi.org/10.1029/2024MS004395"
+  abstract:"We introduce deep generative diffusion for multivariate and regional surrogate modeling learned from sea-ice simulations. Given initial conditions and atmospheric forcings, the model is trained to generate forecasts for a 12-hr lead time from simulations by the state-of-the-art sea-ice model neXtSIM. For our regional model setup, the diffusion model outperforms as ensemble forecast all other tested models, including a free-drift model and a stochastic extension of a deterministic data-driven surrogate model. The diffusion model additionally retains information at all scales, resolving smoothing issues of deterministic models. Furthermore, by generating physically consistent forecasts, previously unseen for such kind of completely data-driven surrogates, the model can almost match the scaling properties of neXtSIM, as similarly deduced from sea-ice observations. With these results, we provide a strong indication that diffusion models can achieve similar results as traditional geophysical models with the significant advantage of being orders of magnitude faster and solely learned from data."
