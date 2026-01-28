@@ -12,6 +12,8 @@ author:
 
 markdown: kramdown
 theme: null
-plugins: []
+plugins:
+  - jekyll-gist
+  - jekyll-github-metadata
 
 permalink: /:title/
