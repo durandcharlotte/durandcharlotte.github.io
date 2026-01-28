@@ -1,5 +1,5 @@
 <div class="hero">
-  <div class="hero__bg" style="background-image: url('{{ '/assets/images/sea_ice.jpg' | relative_url }}')"></div>
+  <div class="hero__bg" style="background-image: url('{{ '/assets/images/lala.mp4' | relative_url }}')"></div>
   <div class="hero__overlay"></div>
 
   <div class="hero__content reveal">

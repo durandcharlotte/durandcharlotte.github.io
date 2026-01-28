@@ -1,0 +1,86 @@
+/* Hero layout */
+.hero {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  min-height: 48vh;
+  padding: 3rem 1.25rem;
+  color: #fff;
+}
+
+/* Video fills the hero */
+.hero__video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Fallback background image (sits under overlay/text but above video only when video hidden) */
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  /* hide bg when video is active on large screens — CSS below toggles visibility */
+}
+
+/* Dark overlay to improve readability */
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.48); /* adjust opacity to taste */
+  z-index: 1;
+}
+
+/* Content should be above video and overlay */
+.hero__content {
+  position: relative;
+  z-index: 2;
+  max-width: 80ch;
+}
+
+/* Title / subtitle styling (adjust to match your theme) */
+.hero__title {
+  margin: 0 0 .4rem 0;
+  font-size: clamp(1.6rem, 3.6vw, 2.8rem);
+  line-height: 1.05;
+  font-weight: 700;
+}
+
+.hero__subtitle {
+  margin: 0;
+  font-size: clamp(1rem, 1.6vw, 1.15rem);
+  color: rgba(255,255,255,0.92);
+}
+
+/* On small screens and for reduced-motion users we prefer the static image */
+@media (max-width: 720px) {
+  .hero__video { display: none; }      /* hide video on small screens to save bandwidth */
+  .hero__bg { z-index: 0; }            /* show poster/background image */
+}
+
+/* Respect user's reduced motion preference: hide video and show the poster image instead */
+@media (prefers-reduced-motion: reduce) {
+  .hero__video { display: none; }
+  .hero__bg { z-index: 0; }
+}
+
+/* If the video is present and playing we keep the background image hidden behind it */
+.hero__video + .hero__bg { visibility: hidden; }
+
+/* Accessibility focus outline for keyboard users if hero contains interactive controls later */
+.hero:focus-within { outline: none; }
+
+/* Optional: make links inside hero contrast well */
+.hero a { color: #bfe7ff; }
+
+/* Small tweak: ensure the poster image covers area if video is hidden in some browsers */
+.hero__bg[style] { background-repeat: no-repeat; }
+
+/* If you want a slightly stronger overlay on mobile, you can increase rgba alpha in a mobile-only rule. */
+/* .hero__overlay { background: rgba(0,0,0,0.6); } @media (max-width:720px) { ... } */

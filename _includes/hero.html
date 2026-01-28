@@ -1,0 +1,28 @@
+<div class="hero">
+  <!-- Video: autoplay, muted, loop, playsinline for mobile browsers -->
+  <video
+    class="hero__video"
+    poster="{{ '/assets/images/sea_ice.jpg' | relative_url }}"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="metadata"
+    aria-hidden="true"
+  >
+    <source src="{{ '/assets/videos/hero.webm' | relative_url }}" type="video/webm">
+    <source src="{{ '/assets/videos/hero.mp4'  | relative_url }}" type="video/mp4">
+    <!-- If the browser can't play video, poster image will show via background fallback -->
+  </video>
+
+  <!-- Fallback background for small screens or when video is hidden -->
+  <div class="hero__bg" style="background-image: url('{{ '/assets/images/sea_ice.jpg' | relative_url }}')"></div>
+
+  <!-- Dark overlay to improve text contrast -->
+  <div class="hero__overlay" aria-hidden="true"></div>
+
+  <div class="hero__content reveal">
+    <h2 class="hero__title">Sea-ice data-driven emulation</h2>
+    <p class="hero__subtitle">Accelerating sea ice modeling with neural networks!</p>
+  </div>
+</div>
