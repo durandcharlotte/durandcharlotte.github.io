@@ -10,57 +10,69 @@ layout: default
   position: relative;
   padding: 1rem;
   margin-bottom: 1.5rem;         /* larger vertical spacing between items */
-  border-radius: 6px;
-  background: var(--card-bg, #fff);
-  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  border-radius: 8px;
+  background: #2b2b2b;           /* dark grey box */
+  color: #f3f3f3;                /* light text for contrast */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.18);
   transition: transform .12s ease;
 }
 
 /* small visual lift on hover */
 .publication-list .card:hover { transform: translateY(-2px); }
 
-/* Abstract tooltip (hidden by default) */
+/* meta line */
+.publication-list .card .small {
+  color: #cfcfcf;
+  margin-top: 0.25rem;
+  font-size: 0.95rem;
+}
+
+/* links */
+.publication-list .card a {
+  color: #8ec6ff;
+  text-decoration: underline;
+}
+
+/* Abstract panel hidden by default (appears below the card) */
 .publication-list .card .abstract {
-  position: absolute;
-  left: calc(100% + 0.8rem);    /* appear to the right of the card */
-  top: 0;
-  width: min(36rem, 380px);
-  max-width: 45vw;
-  background: var(--card-bg, #fff);
-  border: 1px solid rgba(0,0,0,0.08);
-  padding: 0.8rem;
-  border-radius: 6px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  max-height: 0;
+  overflow: hidden;
   opacity: 0;
   transform: translateY(-6px);
-  pointer-events: none;
-  transition: opacity .16s ease, transform .16s ease;
-  z-index: 30;
+  transition: max-height .28s ease, opacity .18s ease, transform .18s ease, padding .18s ease;
+  background: #1f1f1f;           /* slightly darker panel for the abstract */
+  color: #eaeaea;
+  margin-top: 0.6rem;
+  border-radius: 6px;
+  padding: 0 0.8rem;             /* vertical padding expands when open */
+  border: 1px solid rgba(255,255,255,0.03);
   font-size: 0.95rem;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
-/* Show on hover / keyboard focus (accessibility) */
+/* Show the abstract below the card on hover or keyboard focus */
 .publication-list .card:hover .abstract,
 .publication-list .card:focus-within .abstract {
+  max-height: 400px;             /* large enough to hold typical abstracts */
   opacity: 1;
-  pointer-events: auto;
   transform: translateY(0);
+  padding: 0.8rem;
 }
 
-/* Small screen: make abstract part of the flow under each item */
+/* Ensure keyboard users can reveal the abstract */
+.publication-list .card { outline: none; }
+.publication-list .card:focus-within { box-shadow: 0 0 0 3px rgba(142,198,255,0.12); }
+
+/* Small screen: the abstract is always part of the flow (no animation jump) */
 @media (max-width: 720px) {
   .publication-list .card { padding-right: 1rem; }
   .publication-list .card .abstract {
     position: static;
-    width: auto;
-    max-width: none;
-    margin-top: 0.6rem;
-    transform: none;
+    max-height: none;
     opacity: 1;
-    pointer-events: auto;
-    border: 1px solid rgba(0,0,0,0.06);
-    background: rgba(255,255,255,0.98);
+    transform: none;
+    padding: 0.8rem;
+    margin-top: 0.6rem;
   }
 }
 </style>
