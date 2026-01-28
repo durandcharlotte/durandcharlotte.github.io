@@ -17,7 +17,7 @@
   venue: "Preprint"
   year: 2025
   url: "https://doi.org/10.48550/arXiv.2508.14984"
-  abstract:"Sea ice plays an important role in stabilising the Earth system. Yet, representing its dynamics remains a major challenge for models, as the underlying processes are scale-invariant and highly anisotropic. This poses a dilemma, physics-based models that faithfully reproduce the observed dynamics are computationally costly, while efficient AI models sacrifice realism. Here, to resolve this dilemma, we introduce GenSIM, the first generative AI model to predict the evolution of the full Arctic sea-ice state at 12-hour increments."
+  abstract: "Sea ice plays an important role in stabilising the Earth system. Yet, representing its dynamics remains a major challenge for models, as the underlying processes are scale-invariant and highly anisotropic. This poses a dilemma, physics-based models that faithfully reproduce the observed dynamics are computationally costly, while efficient AI models sacrifice realism. Here, to resolve this dilemma, we introduce GenSIM, the first generative AI model to predict the evolution of the full Arctic sea-ice state at 12-hour increments."
 
 - authors: "Finn, T. S., Durand, C., Farchi, A., Bocquet, M., Chen, Y., Carrassi, A., & Dansereau, V. "
   title: "Deep learning subgrid-scale parametrisations for short-term forecasting of sea-ice dynamics with a Maxwell elasto-brittle rheology."
