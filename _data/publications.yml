@@ -19,6 +19,13 @@
   url: "https://doi.org/10.5194/tc-19-5613-2025"
   abstract: "This paper presents a four-dimensional variational data assimilation system based on a neural network emulator for sea-ice thickness, learned from neXtSIM (neXt generation Sea Ice Model) simulation outputs. Testing with simulated and real observation retrievals, the system improves forecasts and bias error, performing comparably to operational methods, demonstrating the promise of sea-ice data-driven data assimilation systems."
 
+- authors: "Durand, C., Finn, T. S., Farchi, A., Bocquet, M., Boutin, G., Olason, E."
+  title: "Data-driven surrogate modeling of high-resolution sea-ice thickness in the Arctic."
+  venue: "The Cryosphere"
+  year: 2024
+  url: "https://doi.org/10.5194/tc-18-1791-2024"
+  abstract: "A novel generation of sea-ice models with elasto-brittle rheologies, such as neXtSIM, can represent sea-ice processes with an unprecedented accuracy at the mesoscale for resolutions of around 10 km. As these models are computationally expensive, we introduce supervised deep learning techniques for surrogate modeling of the sea-ice thickness from neXtSIM simulations. We adapt a convolutional U-Net architecture to an Arctic-wide setup by taking the land–sea mask with partial convolutions into account. Trained to emulate the sea-ice thickness at a lead time of 12 h, the neural network can be iteratively applied to predictions for up to 1 year. The improvements of the surrogate model over a persistence forecast persist from 12 h to roughly 1 year, with improvements of up to 50 % in the forecast error. Moreover, the predictability gain for the sea-ice thickness measured against the daily climatology extends to over 6 months. By using atmospheric forcings as additional input, the surrogate model can represent advective and thermodynamical processes which influence the sea-ice thickness and the growth and melting therein. While iterating, the surrogate model experiences diffusive processes which result in a loss of fine-scale structures. However, this smoothing increases the coherence of large-scale features and thereby the stability of the model. Therefore, based on these results, we see huge potential for surrogate modeling of state-of-the-art sea-ice models with neural networks."
+
 - authors: "Finn, T. S., Bocquet, M., Rampal, P., Durand, C., Porro, F., Farchi, A., & Carrassi, A."
   title: "Generative AI models capture realistic sea-ice evolution from days to decades"
   venue: "Preprint"
@@ -26,16 +33,37 @@
   url: "https://doi.org/10.48550/arXiv.2508.14984"
   abstract: "Sea ice plays an important role in stabilising the Earth system. Yet, representing its dynamics remains a major challenge for models, as the underlying processes are scale-invariant and highly anisotropic. This poses a dilemma, physics-based models that faithfully reproduce the observed dynamics are computationally costly, while efficient AI models sacrifice realism. Here, to resolve this dilemma, we introduce GenSIM, the first generative AI model to predict the evolution of the full Arctic sea-ice state at 12-hour increments."
 
-- authors: "Finn, T. S., Durand, C., Farchi, A., Bocquet, M., Chen, Y., Carrassi, A., & Dansereau, V. "
-  title: "Deep learning subgrid-scale parametrisations for short-term forecasting of sea-ice dynamics with a Maxwell elasto-brittle rheology."
-  venue: "The Cryosphere"
-  year: 2023
-  url: "https://doi.org/10.5194/tc-17-2965-2023"
-  abstract: "We combine deep learning with a regional sea-ice model to correct model errors in the sea-ice dynamics of low-resolution forecasts towards high-resolution simulations. The combined model improves the forecast by up to 75 % and thereby surpasses the performance of persistence. As the error connection can additionally be used to analyse the shortcomings of the forecasts, this study highlights the potential of combined modelling for short-term sea-ice forecasting."
-
+- authors: "Finn, T. S., Durand, C., Farchi, A., Bocquet, M., Brajard, J."
+  title: "Towards diffusion models for large-scale sea-ice modelling"
+  venue: "Preprint"
+  year: 2024
+  url: "https://doi.org/10.48550/arXiv.2406.18417"
+  abstract: "We make the first steps towards diffusion models for unconditional generation of multivariate and Arctic-wide sea-ice states. While targeting to reduce the computational costs by diffusion in latent space, latent diffusion models also offer the possibility to integrate physical knowledge into the generation process. We tailor latent diffusion models to sea-ice physics with a censored Gaussian distribution in data space to generate data that follows the physical bounds of the modelled variables. Our latent diffusion models reach similar scores as the diffusion model trained in data space, but they smooth the generated fields as caused by the latent mapping. While enforcing physical bounds cannot reduce the smoothing, it improves the representation of the marginal ice zone. Therefore, for large-scale Earth system modelling, latent diffusion models can have many advantages compared to diffusion in data space if the significant barrier of smoothing can be resolved."
+  
 - authors: "Finn, T. S., Durand, C., Farchi, A., Bocquet, M., Rampal, P., & Carrassi, A."
   title: "Generative Diffusion for Regional Surrogate Models From Sea‐Ice Simulations"
   venue: "Journal of Advances in Modeling Earth Systems"
   year: 2024
   url: "https://doi.org/10.1029/2024MS004395"
   abstract: "We introduce deep generative diffusion for multivariate and regional surrogate modeling learned from sea-ice simulations. Given initial conditions and atmospheric forcings, the model is trained to generate forecasts for a 12-hr lead time from simulations by the state-of-the-art sea-ice model neXtSIM. For our regional model setup, the diffusion model outperforms as ensemble forecast all other tested models, including a free-drift model and a stochastic extension of a deterministic data-driven surrogate model. The diffusion model additionally retains information at all scales, resolving smoothing issues of deterministic models. Furthermore, by generating physically consistent forecasts, previously unseen for such kind of completely data-driven surrogates, the model can almost match the scaling properties of neXtSIM, as similarly deduced from sea-ice observations. With these results, we provide a strong indication that diffusion models can achieve similar results as traditional geophysical models with the significant advantage of being orders of magnitude faster and solely learned from data."
+
+- authors: "Finn, T. S., Disson, L., Farchi, A., Bocquet, M., and Durand, C."
+  title: "Representation learning with unconditional denoising diffusion models for dynamical systems"
+  venue: "Nonlinear Processes in Geophysics"
+  year: 2024
+  url: "https://doi.org/10.5194/npg-31-409-2024"
+  abstract: "We propose denoising diffusion models for data-driven representation learning of dynamical systems. In this type of generative deep learning, a neural network is trained to denoise and reverse a diffusion process, where Gaussian noise is added to states from the attractor of a dynamical system. Iteratively applied, the neural network can then map samples from isotropic Gaussian noise to the state distribution. We showcase the potential of such neural networks in proof-of-concept experiments with the Lorenz 1963 system. Trained for state generation, the neural network can produce samples that are almost indistinguishable from those on the attractor. The model has thereby learned an internal representation of the system, applicable for different tasks other than state generation. As a first task, we fine-tune the pre-trained neural network for surrogate modelling by retraining its last layer and keeping the remaining network as a fixed feature extractor. In these low-dimensional settings, such fine-tuned models perform similarly to deep neural networks trained from scratch. As a second task, we apply the pre-trained model to generate an ensemble out of a deterministic run. Diffusing the run, and then iteratively applying the neural network, conditions the state generation, which allows us to sample from the attractor in the run's neighbouring region. To control the resulting ensemble spread and Gaussianity, we tune the diffusion time and, thus, the sampled portion of the attractor. While easier to tune, this proposed ensemble sampler can outperform tuned static covariances in ensemble optimal interpolation. Therefore, these two applications show that denoising diffusion models are a promising way towards representation learning for dynamical systems."
+
+- authors: "Bocquet, M., Farchi, A., Finn, T., Durand, C., Cheng, S., Chen, Y., Pasmans, I., Carrassi, A."
+  title: "Accurate deep learning-based filtering for chaotic dynamics by identifying instabilities without an ensemble"
+  venue: "Chaos: An Interdisciplinary Journal of Nonlinear Science"
+  year: 2024
+  url: "https://doi.org/10.1063/5.0230837"
+  abstract: "We investigate the ability to discover data assimilation (DA) schemes meant for chaotic dynamics with deep learning. The focus is on learning the analysis step of sequential DA, from state trajectories and their observations, using a simple residual convolutional neural network, while assuming the dynamics to be known. Experiments are performed with the Lorenz 96 dynamics, which display spatiotemporal chaos and for which solid benchmarks for DA performance exist. The accuracy of the states obtained from the learned analysis approaches that of the best possibly tuned ensemble Kalman filter and is far better than that of variational DA alternatives. Critically, this can be achieved while propagating even just a single state in the forecast step. We investigate the reason for achieving ensemble filtering accuracy without an ensemble. We diagnose that the analysis scheme actually identifies key dynamical perturbations, mildly aligned with the unstable subspace, from the forecast state alone, without any ensemble-based covariances representation. This reveals that the analysis scheme has learned some multiplicative ergodic theorem associated to the DA process seen as a non-autonomous random dynamical system."
+
+- authors: "Finn, T. S., Durand, C., Farchi, A., Bocquet, M., Chen, Y., Carrassi, A., & Dansereau, V. "
+  title: "Deep learning subgrid-scale parametrisations for short-term forecasting of sea-ice dynamics with a Maxwell elasto-brittle rheology."
+  venue: "The Cryosphere"
+  year: 2023
+  url: "https://doi.org/10.5194/tc-17-2965-2023"
+  abstract: "We combine deep learning with a regional sea-ice model to correct model errors in the sea-ice dynamics of low-resolution forecasts towards high-resolution simulations. The combined model improves the forecast by up to 75 % and thereby surpasses the performance of persistence. As the error connection can additionally be used to analyse the shortcomings of the forecasts, this study highlights the potential of combined modelling for short-term sea-ice forecasting."
