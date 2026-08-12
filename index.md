@@ -25,4 +25,4 @@
   </div>
 </div>
 
-<p>Welcome — I'm <strong>Charlotte Durand</strong>. I am currently a PostDoc student at IGE in Grenoble working as part of the SASIP project on sea-ice emulators!</p>
+<p>Welcome — I'm <strong>Charlotte Durand</strong>. I am currently a PostDoc student at IGE in Grenoble working as part of the SASIP project on sea-ice emulators</p>

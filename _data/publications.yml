@@ -1,9 +1,16 @@
-- authors: "Durand, C., Finn, T. S., Farchi, A., Bocquet, M., Boutin, G., & Olason, E."
-  title: "Data-driven surrogate modeling of high-resolution sea-ice thickness in the Arctic."
-  venue: "The Cryosphere"
-  year: 2024
-  url: "https://doi.org/10.5194/tc-18-1791-2024"
-  abstract: "This paper focuses on predicting Arctic-wide sea-ice thickness using surrogate modeling with deep learning. The model has a predictive power of 12 h up to 6 months. For this forecast horizon, persistence and daily climatology are systematically outperformed, a result of learned thermodynamics and advection. Consequently, surrogate modeling with deep learning proves to be effective at capturing the complex behavior of sea ice.."
+- authors: "Durand, C, Botvynko D., Frezat H., Grande D., Storto A., Greenberg D., Fablet R., Ouala S., Le Sommer J."
+  title: "Learning-Based Methods and the Future of Numerical Ocean and Sea Ice Modeling"
+  venue: "ARMS"
+  year: 2026
+  url: "https://doi.org/10.31223/X5HB6S"
+  abstract: "The field of operational oceanography is undergoing a significant evolution with the increasing integration of artificial intelligence (AI) methods, which are complementing and, in some cases, redefining traditional numerical modeling approaches. This review explores how AI methods—particularly model-based autoregressive emulators, hybrid modeling, and end-to-end model-free approaches—are reshaping the representation of ocean and sea-ice dynamics in operational systems. We focus on three key objects: sea-ice parameters, near-surface ocean properties, and the 3D ocean state, each characterized by distinct observational and dynamical challenges. While AI-driven innovations offer new opportunities for improved monitoring, forecasting, and uncer- tainty quantification, their long-term impact on operational systems remains uncertain, especially given the sparsity of subsurface observations and the complexity of ocean dynamics. By synthesizing recent advances and identifying open questions, this paper aims to guide the ocean modeling community toward a future where AI and physics-based approaches coexist synergistically."
+
+- authors: "Durand, C, Rampal P., Brodeau, L."
+  title: "Ocean-Aware Sea-ice Emulator for Future Hybrid Coupled Prediction"
+  venue: "EES Open Archive, under review in JAMES"
+  year: 2026
+  url: "https://doi.org/10.22541/essoar.15007260/v1"
+  abstract: "Neural network-based emulators can reproduce atmospheric dynamics at a far lower computational cost than physics based models, and similar advances are now emerging for sea ice. We develop and assess a deterministic sea-ice emulator, intended for future coupling to an ocean model. It uses a U-Net architecture with physics-informed loss enforcing cross-variable consistency and is trained on coupled sea ice&ndash;ocean simulations. We examine emulator performance across lead times from hourly to daily and under different ocean forcings. Forcing with surface currents consistently causes instabilities, likely because the sea-ice fields already encode an implicit representation of ocean state. In contrast, forcing with sub-surface currents plus sea surface height, salinity, and temperature greatly improves stability and skill for sea-ice volume, concentration, drift, and snow thickness. Among the temporal resolutions tested, the 6-hourly emulator best balances accuracy and stability, outperforming both finer and coarser configurations as well as previously developed sea-ice emulators relying on atmospheric forcing alone. This configuration remains stable over multiple years, faithfully reproduces the seasonal cycle, large-scale drift patterns, Fram Strait export, and achieves a correlation with satellite-derived sea-ice concentration of 77.9%, compared to 78.6% for the NANUQ reference itself. We further test robustness to changes in atmospheric forcing and find degraded performance; especially for sea-ice drift and in regions with strong atmospheric variability&mdash;when switching reanalysis products, driven by differences in forcing statistics. Our results highlight the critical role of ocean forcing choice and temporal resolution in building stable sea-ice emulators suitable for coupled short-term and climate prediction systems."
 
 - authors: "Durand, C., Finn, T. S., Farchi, A., Bocquet, M., Brajard, J., & Bertino, L."
   title: "Four-dimensional variational data assimilation with a sea-ice thickness emulator."
