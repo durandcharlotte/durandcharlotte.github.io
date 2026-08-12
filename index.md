@@ -2,7 +2,7 @@
   <!-- Video: autoplay, muted, loop, playsinline so browsers allow autoplay -->
   <video
     class="hero__video"
-    poster="{{ '/assets/videos/lala.mp4' | relative_url }}"
+    poster="{{ '/assets/images/lala.mp4' | relative_url }}"
     autoplay
     muted
     loop
@@ -10,7 +10,7 @@
     preload="metadata"
     aria-hidden="true"
   >
-    <source src="{{ '/assets/videos/lala.mp4'  | relative_url }}" type="video/mp4">
+    <source src="{{ '/assets/images/lala.mp4'  | relative_url }}" type="video/mp4">
     <!-- If the browser can't play video, the poster image will be used -->
   </video>
 
