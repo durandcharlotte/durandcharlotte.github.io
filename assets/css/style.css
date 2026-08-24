@@ -183,3 +183,4 @@ a:hover{text-decoration:underline}
 /* subtle hover lift on project cards (if you create .card) */
 .card{transition:transform .25s ease, box-shadow .25s ease}
 .card:hover{transform:translateY(-6px);box-shadow:0 14px 36px rgba(2,6,23,0.45)}
+
