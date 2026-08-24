@@ -5,7 +5,8 @@
   <section class="hero">
     <div class="logo-container">
       <img src="{{ '/assets/images/logo_nainuq_no_bg.png' | relative_url }}"
-           alt="NaiNUQ logo">
+           alt="NaiNUQ logo"
+           style="width: 100px; height: auto;">
     </div>
 
     <h1>NaiNUQ</h1>
