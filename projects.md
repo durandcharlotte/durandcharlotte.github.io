@@ -1,12 +1,10 @@
 # Projects
 
-1- 
-
 <div class="nainuq-container">
 
   <section class="hero">
     <div class="logo-container">
-      <img src="{{ './images/logo_nainuq_no_bg.png' | relative_url }}"
+      <img src="{{ '/assets/images/logo_nainuq_no_bg.png' | relative_url }}"
            alt="NaiNUQ logo">
     </div>
 
